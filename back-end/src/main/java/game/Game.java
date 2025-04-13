@@ -17,7 +17,11 @@ public class Game {
     private final Board board;
     private final Player player;
     private final List<Game> history;
-
+    
+    public List<Game> getHistory() {
+        return this.history;
+    }
+    
     public Game() {
         this(new Board(), Player.PLAYER0);
     }
